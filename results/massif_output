@@ -1,0 +1,78 @@
+--------------------------------------------------------------------------------
+Command:            ./build/app/shell-app
+Massif arguments:   (none)
+ms_print arguments: massif.out.15179
+--------------------------------------------------------------------------------
+
+
+    KB
+72.02^                                                                       #
+     |                                                                   :::@#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+     |                                                                   :  @#
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   2.191
+
+Number of snapshots: 10
+ Detailed snapshots: [4, 8 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      2,151,675           72,712           72,704             8            0
+  2      2,261,858           72,752           72,728            24            0
+  3      2,262,021           72,792           72,748            44            0
+  4      2,264,358           72,792           72,748            44            0
+99.94% (72,748B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->99.88% (72,704B) 0x4EBAEFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+| ->99.88% (72,704B) 0x40106B8: call_init.part.0 (dl-init.c:72)
+|   ->99.88% (72,704B) 0x40107C9: _dl_init (dl-init.c:30)
+|     ->99.88% (72,704B) 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+|       
+->00.06% (44B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  5      2,264,358           72,752           72,728            24            0
+  6      2,266,096           72,712           72,704             8            0
+  7      2,272,422           73,744           73,728            16            0
+  8      2,297,195           73,744           73,728            16            0
+99.98% (73,728B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->98.59% (72,704B) 0x4EBAEFE: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+| ->98.59% (72,704B) 0x40106B8: call_init.part.0 (dl-init.c:72)
+|   ->98.59% (72,704B) 0x40107C9: _dl_init (dl-init.c:30)
+|     ->98.59% (72,704B) 0x4000C68: ??? (in /lib/x86_64-linux-gnu/ld-2.23.so)
+|       
+->01.39% (1,024B) 0x54361D3: _IO_file_doallocate (filedoalloc.c:127)
+| ->01.39% (1,024B) 0x5444592: _IO_doallocbuf (genops.c:398)
+|   ->01.39% (1,024B) 0x54438F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+|     ->01.39% (1,024B) 0x544228B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+|       ->01.39% (1,024B) 0x54377B9: fwrite (iofwrite.c:39)
+|         ->01.39% (1,024B) 0x4F3FEC4: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+|           ->01.39% (1,024B) 0x4F40235: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+|             ->01.39% (1,024B) 0x4035BA: main (main.cpp:7)
+|               
+->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  9      2,297,195           72,712           72,704 
