@@ -1,6 +1,6 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+[![Build Status](https://travis-ci.org/AdarshJS/Valgrind_Exercise.svg?branch=valgrind_exercise)](https://travis-ci.org/AdarshJS/Valgrind_Exercise)
+[![Coverage Status](https://coveralls.io/repos/github/AdarshJS/Valgrind_Exercise/badge.svg?branch=valgrind_exercise)](https://coveralls.io/github/AdarshJS/Valgrind_Exercise?branch=valgrind_exercise)
 ---
 
 ## Overview
